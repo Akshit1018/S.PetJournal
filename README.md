@@ -1,37 +1,42 @@
-# S.PetJournal
+# PetJournal — Open Source Pet Health Journal, Shop & Sitters
 
-**Simple name:** PetJournal
+**PetJournal** is an open-source **pet care app**: health journal, documents, calendar, first-aid, shop, and sitter handoff. One place for the dog’s vaccines and the cat’s food order.
 
-Pet health journal, shop, and sitters.
+[![License: MIT](https://img.shields.io/badge/License-MIT-pink.svg)](LICENSE)
 
-This is a Grok App Builder project. The sandbox npm name was `app-builder-workspace`. On GitHub it is **S.PetJournal** (private).
+## Features
 
-## Run on this Mac
+- Multi-pet journal and photo album
+- Health records and documents
+- Care calendar and handoff notes for sitters
+- Shop by category + cart
+- Optional AI pet guide (`XAI_API_KEY`)
 
-Need **Node.js 22** and **npm**. Postgres is not required (uses PGLite in the browser/process).
+## Who it is for
+
+- Pet parents
+- Clinics / groomers prototyping a **pet CRM**
+- Developers building **vet records** or **pet commerce**
+
+## Quick start
 
 ```bash
-cd "/Users/akshitpareta/Documents/S-projects/S.PetJournal"
+git clone https://github.com/Akshit1018/S.PetJournal.git
+cd S.PetJournal
 npm install
-npm run dev
-```
-
-Open http://127.0.0.1:8080
-
-To skip Grok login in local preview:
-
-```bash
 VITE_AUTH_ENABLED=false npm run dev
 ```
 
-Optional AI (only if this app calls Grok): set `XAI_API_KEY`.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## Scripts
+## Tech stack
 
-- `npm run dev` — Vite on port 8080
-- `npm run build` — production build + DB migrate (skipped without DATABASE_URL)
-- `npm run typecheck`
+React 19 · TanStack Start · Vite · Tailwind · Zustand
 
-## Notes
+## License
 
-Do not commit `.env`, `node_modules`, or `.grok/`.
+[MIT](LICENSE)
+
+## Keywords
+
+pet health journal, pet medical records app, dog vaccine tracker, pet sitter handoff, pet shop app, open source pet care
